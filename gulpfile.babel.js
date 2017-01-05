@@ -27,5 +27,5 @@ gulp.task('default', () => {
         rename: {suffix: '-large'}
       }]
     }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('assets/dist'));
 });
