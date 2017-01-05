@@ -1,0 +1,223 @@
+/*######################################################################
+# Project 2: Responsive Portfolio
+# Date Completed: 12/22/2016
+# Submitted by: Linda Zhang
+######################################################################*/
+
+/*############################ stylesheet ##############################
+# The design of this portfolio is inspired by the mock provided by
+# Udacity.
+######################################################################*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styling */
+
+body * {
+	font-family: "Raleway", sans-serif;
+	font-size: 22px;
+	color: #4b5d6c;
+}
+
+header {
+	margin-top: 1vw;
+}
+
+footer {
+	background-color: #2d3c49;
+	margin-top: 8vw;
+}
+
+.break {
+	border: none;
+	height: 3px;
+  /* Set the hr color */
+  color: #c2d4e3; /* old IE */
+  background-color: #c2d4e3; /* Modern Browsers */
+	margin: 2vw 0 2.5vw 0;
+}
+
+.logo-img {
+	margin-top: 1.5em;
+	max-width: 60%;
+	min-width: 48px;
+}
+
+.header-name {
+	font-size: 10vw;
+	font-weight: 100;
+}
+
+.tagline {
+	font-family: "Work Sans", sans-serif;
+	font-size: 4vw;
+}
+
+.featured-headline {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 7vw;
+	color: #7f98ad;
+	padding: 2vw 0 0.8vw 0;
+}
+
+.app-name {
+	font-weight: 400;
+	font-size: 8vw;
+	margin: 2vw 0 1vw 0;
+}
+
+.app-img:hover, .app-name:hover, .app-link:hover {
+	cursor: pointer;
+}
+
+.app-link {
+	font-size: 3vw;
+	color: #7f98ad;
+	margin: 0 0 5vw 0;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: space-around;
+}
+
+.link {
+	font-size: 5vw;
+	margin: 1vw;
+}
+
+.link-text {
+	color: #02b3e4;
+	font-size: 5vw;
+}
+
+@media screen and (min-width: 768px) {
+	.header-name {
+		font-size: 8vw;
+	}
+
+	.tagline {
+		font-size: 3vw;
+	}
+
+	.app-name {
+		font-size: 6vw;
+	}
+
+	.link-text {
+		font-size: 3vw;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	header {
+		margin-top: 5vw;
+	}
+
+	.featured-headline {
+		font-size: 5vw;
+	}
+
+	.header-name {
+		text-align: right;
+		font-size: 7vw;
+	}
+
+	.tagline {
+		text-align: right;
+	}
+
+	.app-name {
+		font-size: 4vw;
+	}
+
+	.app-link {
+		font-size: 2vw;
+	}
+
+	a {
+		font-size: 3vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.header-name {
+		font-size: 100px;
+	}
+
+	.tagline {
+		font-size: 45px;
+	}
+
+	.featured-headline {
+		font-size: 52px;
+	}
+
+	.app-name {
+		font-size: 60px;
+		margin: 1.5vw 0 1vw 0;
+	}
+
+	.app-link {
+		font-size: 30px;
+		margin: 0 0 3vw 0;
+	}
+
+}
+
+/*rgb(2, 179, 228)
+rgb(45, 60, 73)
+rgb(126, 152, 173)*/
