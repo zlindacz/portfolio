@@ -116,17 +116,13 @@ footer {
 .app-name {
 	font-weight: 400;
 	font-size: 8vw;
-	margin: 2vw 0 1vw 0;
+	padding: 1vw 0 3vh 0;
+	display: inline-block;
 }
 
 .app-img:hover, .app-name:hover, .app-link:hover {
 	cursor: pointer;
-}
-
-.app-link {
-	font-size: 3vw;
-	color: #7f98ad;
-	margin: 0 0 5vw 0;
+	text-decoration: none;
 }
 
 .footer-links {
